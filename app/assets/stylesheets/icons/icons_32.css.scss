@@ -1,0 +1,16 @@
+@import 'compass';
+
+@mixin icons{
+  background:url(image_path('icons/icons_32.png'));
+  width: 32px;
+  height: 32px;
+}
+
+.icon-facebook{
+  @include icons;
+  background-position: 0 0;
+}
+.icon-twitter{
+  @include icons;
+  background-position: 32px 0;
+}

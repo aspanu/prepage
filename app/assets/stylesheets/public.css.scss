@@ -1,0 +1,89 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'compass';
+//@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+$grey: #9a9a9a;
+
+
+
+//@font-face {
+//  font-family: 'SourceSansPro';
+//  src: url(asset_path('fonts/SourceSansPro-Bold.otf', stylesheets));
+  //src: local ('Ø'),
+  //url( assets/Tino-Trinidat-webfont.woff) format('woff') ,
+  //url( assets/Tino-Trinidat-webfont.ttf) format('truetype'),
+  //url( assets/Tino-Trinidat-webfont.svg) format('svg');
+//}
+
+@include font-face('
+  SourceSansPro',
+  font-files(asset_path('fonts/SourceSansPro-Bold.otf', stylesheets))
+);
+
+body{
+  background: url(image_path('patterns/hg_body.jpg'));
+  font-family: sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
+}
+
+.logo{
+  background: url(image_path('logo.png'));
+  width: 833px;
+  height: 277px;
+  display: block;
+  margin: 70px auto;
+}
+
+.claim{
+  text-align: center;
+  font-size: 56px;
+}
+
+.divider{
+  background: url(image_path('icons/dashed_border.png')) repeat-x;
+}
+
+h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+h4{
+  font-size: 18px;
+  margin: 20px 0px;
+}
+h6{
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+//===============================
+//     WRAPPER
+//===============================
+
+.wrapper{
+  width: 1024px;
+  border:  1px solid $grey;
+  margin:  40px auto;
+  padding-top: 40px;
+  min-height: 835px;
+  background: #FFF;
+  position: relative;
+  @include box-shadow(rgba(black,0.4) 2px 2px 10px);
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //margin-top: -417px;
+  //margin-left: -512px;
+
+  .content{
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+  }
+}
+
+
+

@@ -1,0 +1,22 @@
+@import 'compass';
+
+#impressum{
+  line-height: 22px;
+  font-size: 14px;
+  address{
+    margin-bottom: 20px;
+  }
+  .geschaeftsfuehrung{
+    margin-bottom: 5px;
+  }
+  b{
+    font-weight: bold;
+  }
+  .kontakt{
+    margin: 20px 0;
+  }
+
+  p:last-child{
+    padding-bottom: 150px;
+  }
+}
