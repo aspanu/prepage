@@ -42,9 +42,9 @@ end
 set :user, "user76822042"
 
 
-# password to login to the target server
-set :password, "yOLptO6JxA"
-
+# allow SSH-Key-Forwarding
+set :ssh_options, { :forward_agent => true }  
+ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "id_rsa")]
 
 ## Application name and repository
 
