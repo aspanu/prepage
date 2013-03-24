@@ -12,7 +12,6 @@ gem 'thin'
 
 #need for js.cofee files
 gem 'execjs'
-#gem 'therubyracer','0.11.0beta1'
 gem 'therubyracer'
 
 
