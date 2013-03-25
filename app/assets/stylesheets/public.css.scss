@@ -1,5 +1,5 @@
 // Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import 'compass';
@@ -18,15 +18,11 @@ $grey: #9a9a9a;
   //url( assets/Tino-Trinidat-webfont.svg) format('svg');
 //}
 
-@include font-face('
-  SourceSansPro',
-  font-files(asset_path('fonts/SourceSansPro-Bold.otf', stylesheets))
-);
+@include font-face('SourceSansPro',font-files(asset_path('fonts/SourceSansPro-Bold.otf', stylesheets)));
 
 body{
   background: url(image_path('patterns/hg_body.jpg'));
   font-family: sans-serif;
-  font-family: 'SourceSansPro', sans-serif;
 }
 
 .logo{
@@ -40,6 +36,7 @@ body{
 .claim{
   text-align: center;
   font-size: 56px;
+  font-family: 'SourceSansPro', sans-serif;
 }
 
 .divider{
