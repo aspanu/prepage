@@ -1,12 +1,15 @@
 %footer.divider
   .container_12
-    .grid_4.social_bar
-      //=link_to image_tag('blank.gif', :class =>'icon-facebook'),'http://www.facebook.com/SavingGlobal', :target=> :blank
+    .grid_4
+      %p.copyright
+        &copy; Copyright 2013 WS Finanz GmbH
+    -#.grid_4.social_bar
+      =link_to image_tag('blank.gif', :class =>'icon-facebook'),'http://www.facebook.com/SavingGlobal', :target=> :blank
       =link_to image_tag('blank.gif', :class =>'icon-twitter'), 'http://www.twitter.com/SavingGlobal', :target => :blank
     .grid_8.footer_links.text-right
       %ul
         %li
           =link_to t('.legal_information'),[:legal_information]
-    .grid_12
-      %p.copyright
-        &copy; Copyright 2013 WS Finanz GmbH
+    -#.grid_12
+    -#  %p.copyright
+    -#    &copy; Copyright 2013 WS Finanz GmbH

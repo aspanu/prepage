@@ -7,21 +7,23 @@ gem 'rails', '3.2.13'
 
 gem 'mysql2'
 
-#webserver
-gem 'thin'
-
 #need for js.coffee files
 gem 'execjs'
-gem 'therubyracer'
 
 
 #Grafik and layout
 gem 'haml'
 gem 'less-rails'
-
 gem 'compass-rails'
 gem 'compass-960-plugin'
 gem 'twitter-bootstrap-rails'
+
+group :development do
+  gem 'quiet_assets'
+  gem 'therubyracer'
+  #webserver
+  gem 'thin'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
